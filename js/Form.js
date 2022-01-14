@@ -16,7 +16,7 @@ class Form {
 
   display(){
     this.title.html("Car Racing Game");
-    this.title.position(width/2 - 100, 0);
+    this.title.position(width/2 - this.title.width, 0);
     this.title.class("titleStyle");
     this.input.position(width/2 - 40 , height/2 - 80);
     this.input.class("inputStyle");
