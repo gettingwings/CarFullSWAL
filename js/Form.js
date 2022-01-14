@@ -31,7 +31,7 @@ class Form {
       player.index = playerCount;
       player.update();
       player.updateCount(playerCount);
-      this.greeting.html("Hello " + player.name)
+      this.greeting.html("Hello " + player.name +"/n This is a two player game please let the other player join...")
       this.greeting.position(width/2 - 30, height/4);
     });
 
