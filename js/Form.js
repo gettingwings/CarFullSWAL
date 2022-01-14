@@ -16,12 +16,12 @@ class Form {
 
   display(){
     this.title.html("Car Racing Game");
-    this.title.position(displayWidth/2 - 150, 0);
+    this.title.position(width/2 - 100, 0);
     this.title.class("titleStyle");
-    this.input.position(displayWidth/2 - 40 , displayHeight/2 - 80);
+    this.input.position(width/2 - 40 , height/2 - 80);
     this.input.class("inputStyle");
-    this.button.position(displayWidth/2 , displayHeight/2);
-    this.reset.position(displayWidth-50,20);
+    this.button.position(width/2 , height/2);
+    this.reset.position(width-70,20);
 
     this.button.mousePressed(()=>{
       this.input.hide();
@@ -32,7 +32,7 @@ class Form {
       player.update();
       player.updateCount(playerCount);
       this.greeting.html("Hello " + player.name)
-      this.greeting.position(displayWidth/2 - 30, displayHeight/4);
+      this.greeting.position(width/2 - 30, height/4);
     });
 
     this.reset.mousePressed(()=>{
