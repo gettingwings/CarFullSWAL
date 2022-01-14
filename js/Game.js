@@ -124,12 +124,12 @@ class Game {
     Swal.fire({
       title: `Awesome! ${player.name} ${'\n'} Your rank is ${player.rank}`,
       text:"You reached the finish line!!",
-      imageUrl:"images/trophy.png",
+      imageUrl:"./images/trophy.png",
       imageWidth:100,
       imageHeight:100,
       confirmButtonText:"Celebrate",
       confirmButtonColor: '#3085d6',
-      confirmButtonWidth: 120,
+      confirmButtonWidth: 140,
       showCancelButton: true,
       cancelButtonColor: '#d33',
     }).then((result) => {
@@ -139,7 +139,7 @@ class Game {
           showConfirmButton: false,
           backdrop: `
             rgba(0,0,123,0.3)
-            url("/images/Streamers.gif")
+            url("./images/Streamers.gif")
             center
             no-repeat
           `
