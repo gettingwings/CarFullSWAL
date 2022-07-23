@@ -97,7 +97,7 @@ class Game {
     }
    
 
-    if(player.distance > 3660){
+    if(player.distance > displayHeight*6-150){
       gameState = 2;
       player.rank +=1;
       Player.updateCarsAtEnd(player.rank);
@@ -110,8 +110,8 @@ class Game {
 
   end(){
     //console.log("Game Ended");
-    console.log(player.name,"   ", player.rank);
-    alert(player.name,"   ", player.rank);
+    //console.log(player.name,"   ", player.rank);
+    //alert(player.name,"   ", player.rank);
   }
 
   showRank(){
